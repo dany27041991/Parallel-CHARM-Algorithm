@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "algorithm": "c",
+        "random": "c",
+        "__locale": "c",
+        "locale": "c",
+        "thread": "c",
+        "chrono": "c"
+    }
+}

@@ -1,0 +1,7 @@
+#!/bin/bash
+mpicc parallel_charm.c common.c broadcast_dataset.c closed_itemset.c -o parallel_charm
+for i in {1..13}
+do
+	mpirun -oversubscribe -quiet -np $i parallel_charm -parallel >> time-$1-$2.txt
+	sleep $3
+done
